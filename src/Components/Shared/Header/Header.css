@@ -5,3 +5,14 @@ nav a{
     font-size: large;
     margin-right: 20px;
 }
+.icon{
+    color: rgb(136, 136, 241);
+    font-size: 50px;
+    margin-right: 10px;
+}
+.btn-regular{
+    background-color: rgb(18, 18, 160);
+    color: white;
+    font-weight: bold;
+
+}

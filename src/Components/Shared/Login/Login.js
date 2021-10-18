@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import useAuth from '../../../Hooks/useAuth'
+import img from '../../../images/login-page.jpg'
 
 const Login = () => {
     const {error,signinWithGoogle, handleEmail, handlePassword, handleLogin} =useAuth();
 
     return (
         <div className="text-center">
+            <div>
+                <img src={img} alt="" />
+            </div>
             <div>
                 <h1>Log in</h1>
                 <br />

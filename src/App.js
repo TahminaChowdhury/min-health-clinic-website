@@ -10,7 +10,9 @@ import Footer from "./Components/Shared/Footer/Footer";
 import Header from "./Components/Shared/Header/Header";
 import Login from "./Components/Shared/Login/Login";
 import Signup from "./Components/Shared/Signup/Signup";
+import ServiceDetails from "./Components/ServiceDetails/ServiceDetails";
 import AuthProvider from "./Context/AuthProvider";
+
 
 import NotFound from "./Pages/NotFound/NotFound";
 
@@ -24,6 +26,10 @@ function App() {
 
           <Route path="/home">
             <Home></Home>
+          </Route>
+
+          <Route path="/service/:serviceId">
+            <ServiceDetails></ServiceDetails>
           </Route>
 
           <Route path="/login">
