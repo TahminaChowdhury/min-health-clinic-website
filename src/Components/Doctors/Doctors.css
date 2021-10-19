@@ -1,0 +1,7 @@
+.text-color{
+    color: rgb(18, 18, 160);
+}
+.line{
+    border-top: 3px solid rgb(18, 18, 160);
+    width: 80px;
+}

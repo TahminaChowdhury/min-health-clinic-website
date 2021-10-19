@@ -1,10 +1,14 @@
 import React from 'react';
 import './ContactUs.css'
 import img from '../../images/picture-frustrated-young-caucasian-man-wearing-sweater-eyeglasses-sitting-comfortable-couch-sharing-his-personal-problems-with-middle-aged-female-counselor-during-therapy-session_344912-1930.jpg'
+import Banner from '../Banner/Banner';
+import Home from '../Home/Home'
 
 
 const ContactUs = () => {
     return (
+        <div>
+            <Home></Home>
         <div className="bg my-5 py-5">
             <div className="d-flex justify-content-between text-white">
                 <div className="p-5">
@@ -39,6 +43,7 @@ const ContactUs = () => {
                 </div>
                 
             </div>
+        </div>
         </div>
     );
 };

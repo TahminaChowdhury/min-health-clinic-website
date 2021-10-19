@@ -1,22 +1,31 @@
 import React from 'react';
+import './Footer.css'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <div>
             <footer className="bg-dark py-3 text-center">
-            <div className="ps-5 d-flex justify-content-between">
+            <div className="ps-5 d-flex justify-content-around ">
             <div className="text-start">
-                <h4 className="text-light">Mind Health Clinic</h4>
-                <p className="text-white">You don’t have to control your thoughts. <br /> You just have to stop letting them control you. </p>
+                <h4 className="text-light"><span className="fs-1 text-primary"> Mind </span>Health Clinic</h4>
+                <p className="text-white">You don’t have to <br /> control your thoughts. <br /> You just have to stop letting them control you. </p>
             </div>
-            <div className="text-white ms-auto pe-5 text-start">
+            <div className="text-white text-start">
+                <ul>
+                    <li><Link to="/home" >Dpression Treatment</Link></li>
+                    <Link to="/home" >Anxiety Counselling</Link>
+                    <li><Link to="/home" >Personal Development</Link></li>
+                    <li><Link to="/home" >Couples Counselling</Link></li>
+                    <li><Link to="/home" >Stress-Related Disorders Treatment</Link></li>
+                    <li><Link to="/home" >Eating Disorders Disorders Treatment</Link></li>
+                </ul>
+            </div>
+            <div className="text-white pe-5 text-start py-4">
                 <p>Contact-Info</p>
-                <p><i class="far fa-envelope"></i>        Email:englishdiscovery@gmail.com</p>
-                <p><i class="fas fa-phone-alt"></i> Call us: 017555-44444</p>
-                <p><i class="fas fa-map-marker-alt"></i> Sector-1, Uttara, Dhaka 1230</p>
-            </div>
-            <div>
-
+                <p><i class="far fa-envelope"></i>        Email:mindhealthclinic@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> Call us: 01755-555-80</p>
+                <p><i class="fas fa-map-marker-alt"></i>Sector-1,Road-3,Uttara,Dhaka-1230</p>
             </div>
             </div>
             <span><i class="fab fa-facebook social-icon"></i></span>

@@ -18,11 +18,11 @@ const ServiceDetails = () => {
     }, [])
     return (
         <div>
-           <Container className="mt-5 pt-5">
+           <Container className="my-5 py-5">
                <div className="d-flex">
                     <div className="pe-5">
                        <h1>{service.name}</h1>
-                       <p className="text-start">{service.description}</p>
+                       <p className="text-start">{service.description}...</p>
                     </div>
                     <div>
                     <img src={service.img} alt="" />

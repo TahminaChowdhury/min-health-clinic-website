@@ -1,4 +1,5 @@
 import React from 'react';
+import './About.css'
 import Banner from '../Banner/Banner';
 import img1 from '../../images/young-female-psychologist-is-writing-down-her-thoughts-about-depressed-patient_23-2148036646.jpg'
 import img3 from '../../images/hand-drawn-mental-health-instagram-stories-collection_23-2149053447.jpg'
@@ -8,7 +9,7 @@ import img5 from '../../images/hand-drawn-illustrations-people-with-mental-healt
 
 const Aboutus = () => {
     return (
-        <div>
+        <div >
             <Banner></Banner>
             <div  className="my-5 py-5">
             <div className="mt-5 p-5">
@@ -41,7 +42,7 @@ const Aboutus = () => {
                     {/* <img src={img3} alt="" h-75 /> */}
                 </div>
                 </div>
-                <div className="d-flex mt-5">
+                <div className="d-flex my-5">
                     <div>
                         <img src={img4} alt="" />
                     </div>
