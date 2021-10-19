@@ -4,9 +4,10 @@ import useAuth from '../../../Hooks/useAuth';
 import img from '../../../images/sign-up.jpg'
 
 const Signup = () => {
-    const {error, handleEmail, handlePassword, handleSignup} =useAuth();
+    const {error, handleEmail, handlePassword, handleSignup, handleResetPassword} =useAuth();
     return (
         <div className="d-flex justify-content-center">
+            
             <div className="">
                 <img src={img} alt="" />
             </div>
@@ -20,9 +21,10 @@ const Signup = () => {
                     <br />
                     <label htmlFor="">Password</label>
                     <br />
-                    <input onBlur={handlePassword} type="password" name="password" id="" placeholder="Password should be at least 6 characters..."
+                    <input onBlur={handlePassword} type="password" name="password" id=""
                     required className="w-100  py-2"/>
                     <br />
+                    <button className="btn text-primary" onClick={handleResetPassword}>Forgot Password?</button>
                     <h5 className="text-danger my-3">{error}</h5>
                     <button type="submit" className="btn btn-primary rounded-pill w-75 mt-3 ms-5">Log in</button>
                 </form>

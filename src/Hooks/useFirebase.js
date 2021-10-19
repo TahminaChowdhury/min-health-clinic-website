@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword,GoogleAuthProvider, FacebookAuthProvider,onAuthStateChanged,signOut } from "firebase/auth";
+import { getAuth, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail,GoogleAuthProvider, FacebookAuthProvider,onAuthStateChanged,signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initAuth from "../Firebase/Firebase.init";
 
@@ -43,6 +43,7 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
         .then(result => {
             console.log(result.user)
+            verifyEmail();
             setError("");
         })
         .catch(error => {
@@ -60,7 +61,21 @@ const useFirebase = () => {
             .catch((error) => {
                 setError(error.message);
             });
-    }
+    };
+
+
+    const verifyEmail = () => {
+        sendEmailVerification(auth.currentUser)
+        .then ( () => {
+  
+        })
+      }
+      const handleResetPassword = () => {
+        sendPasswordResetEmail(auth, email)
+        .then( () => {
+  
+        })
+      }
 
     
     // providers
@@ -72,9 +87,10 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
         .then(result => {
             setUser(result.user)
+            setError("");
         })
         .catch(error => {
-            setError(error.message)
+            setError(error.message);
         })
     }
 
@@ -84,10 +100,10 @@ const useFirebase = () => {
         signInWithPopup(auth, facebookProvider)
         .then( result => {
           setUser(result.user);
-          setError("")
+          setError("");
         })
-        .catch(erroe => {
-            setError(error.message)
+        .catch(error => {
+            setError(error.message);
         })
 }
 
@@ -117,6 +133,7 @@ const useFirebase = () => {
         error,
         handleEmail,
         handlePassword,
+        handleResetPassword,
         handleSignup,
         handleLogin,
         signinWithGoogle,

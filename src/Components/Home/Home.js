@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import './Home.css'
 import { Col, Container, Row } from 'react-bootstrap';
 import Banner from '../Banner/Banner';
 import ContactUs from '../ContactUs/ContactUs';
 import Services from '../Services/Services';
+import img from '../../images/mental-health-1.jpg'
+import img2 from '../../images/hand-drawn-illustrations-people-with-mental-health-problems_23-2149048909.jpg'
 
 const Home = () => {
     const [services, setServices] =useState([]);
@@ -27,7 +30,9 @@ const Home = () => {
                             )
                         }
                 </Row>
+                
             </Container>
+           
             <ContactUs></ContactUs>
         </div>
     );

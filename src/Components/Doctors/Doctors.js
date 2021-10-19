@@ -16,7 +16,7 @@ const Doctors = () => {
     return (
         <div>
             <Banner></Banner>
-            <Container>
+            <Container className="my-5">
                 <h1 className="my-5">Our Specialized Doctors</h1>
                 <Row>
                     {

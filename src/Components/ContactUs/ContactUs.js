@@ -18,7 +18,7 @@ const ContactUs = () => {
                         </div>
                         <div className="ps-4 fs-5">
                             <p>01755-555-80</p>
-                            <p>000000000000</p>
+                            <p>998877665544</p>
                         </div>
                     </div>
                     <div className="d-flex mt-5">

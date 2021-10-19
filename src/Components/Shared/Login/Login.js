@@ -5,10 +5,11 @@ import img from '../../../images/mobile-login-concept-illustration_114360-83.jpg
 import { Link } from 'react-router-dom';
 
 const Login = () => {
-    const {error,signinWithGoogle, handleEmail, handlePassword, handleLogin, signInWithFacebook} =useAuth();
+    const {user,error,signinWithGoogle, handleEmail, handlePassword, handleResetPassword,handleLogin, signInWithFacebook} =useAuth();
 
     return (
         <div className="d-flex justify-content-center">
+            {user.name}
                 <div>
                     <img src={img} alt=""/>
                 </div>
@@ -25,7 +26,7 @@ const Login = () => {
                     <input onBlur={handlePassword} type="password" name="password" id=""
                     required className="w-75  py-2"/>
                     <br />
-                    <p>Forgot password ?</p>
+                    <button className="btn text-primary" onClick={handleResetPassword}>Forgot Password?</button>
                     <h5 className="text-danger my-3">{error}</h5>
                     <button className="btn btn-primary rounded-pill w-75 mb-4">Log in</button>
                 </form>
