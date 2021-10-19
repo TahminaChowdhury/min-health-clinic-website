@@ -2,16 +2,35 @@ import React from 'react';
 import './About.css'
 import Banner from '../Banner/Banner';
 import img1 from '../../images/young-female-psychologist-is-writing-down-her-thoughts-about-depressed-patient_23-2148036646.jpg'
-import img3 from '../../images/hand-drawn-mental-health-instagram-stories-collection_23-2149053447.jpg'
+import img3 from '../../images/tiny-people-beautiful-flower-garden-inside-female-head-isolated-flat-illustration_74855-11098.jpg'
 import img2 from '../../images/doctor-2.jpg'
 import img4 from '../../images/mental-health-1.jpg'
 import img5 from '../../images/hand-drawn-illustrations-people-with-mental-health-problems_23-2149048909.jpg'
+import { Link } from 'react-router-dom';
 
 const Aboutus = () => {
     return (
         <div >
-            <Banner></Banner>
-            <div  className="my-5 py-5">
+            <div  className="mb-5 pb-5 ">
+                <div className="d-flex justify-content-between bg-color">
+                <div className="p-5">
+                    <h1>Welcome to</h1>
+                    <h1 className="text-color">MIND HEALTH CLINIC</h1>
+                    <h5>Mental health is not a destination, but a process. It's about how you drive, not where you're going.</h5>
+                    <div className="mt-4">
+                        <Link to="/login">
+                        <button className="btn btn-regular
+                        ">Fixed an appointment</button>
+                        </Link>
+                        <Link to="/home">
+                        <button className="btn btn-regular ms-4 ">View ervices</button>
+                        </Link>  
+                    </div>
+                </div>
+                <div>
+                    <img src={img3} alt="" />
+                </div>
+               </div>
             <div className="mt-5 p-5">
                 <h2>Welcome To Mind Health Clinic</h2>
                 <p>Mental health is integral to living a healthy, balanced life. According to the National Alliance of Mental Illness (NAMI), one in five American experience mental health issues which translates to more than 40 million adults a year.Our mental health encompasses our psychological, emotional and social well-being. This means it impacts how we feel, think and behave each day. Our mental health also contributes to our decision making process, how we cope with stress and how we relate to others in our lives.</p>

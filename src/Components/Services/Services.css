@@ -5,3 +5,13 @@
     background-color: rgb(18, 18, 160);
     color: white;
 }
+.wrap {
+    margin: 50px;
+  }
+.box{
+    transition: transform 1s;
+}
+.box:hover {
+
+    transform: scale(1.1);
+  }

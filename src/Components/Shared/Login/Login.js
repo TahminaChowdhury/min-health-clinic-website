@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Login = () => {
     const {user,error,signinWithGoogle, handleEmail, handlePassword, handleResetPassword,handleLogin, signInWithFacebook} =useAuth();
+    
 
     return (
         <div className="d-flex justify-content-center">

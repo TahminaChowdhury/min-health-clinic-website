@@ -18,7 +18,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Container className="my-5">
-                <h1 className="text-center">Popular Therapy Services</h1>
+                <h1 className="text-center text-color my-5">Popular Therapy Services</h1>
                 <Row className="g-4 mx-3 mb-5">
                     
                         {

@@ -84,7 +84,7 @@ const useFirebase = () => {
 
     // sign in with google
     const signinWithGoogle = () => {
-        signInWithPopup(auth, googleProvider)
+       return signInWithPopup(auth, googleProvider)
         .then(result => {
             setUser(result.user)
             setError("");
