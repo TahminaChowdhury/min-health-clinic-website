@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div>
+        <div responsive>
             <footer className="bg-dark py-3 text-center">
             <div className="ps-5 d-flex justify-content-around ">
             <div className="text-start">
