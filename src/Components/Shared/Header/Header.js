@@ -19,12 +19,15 @@ const Header = () => {
                 <NavLink to="/doctors">DOCTORS</NavLink>
                 <NavLink to="/contactus">CONTACT US</NavLink>
                 </Nav>
+                <Navbar.Text className="me-3 fs-5 fw-bold">
+                    Signed in as:{user?.name}
+                </Navbar.Text>
                 {
                     user?.email ?
-                    <button onClick={logOut} className="btn btn-primary">logout</button>
+                    <button onClick={logOut} className="btn btn-regular">log out</button>
                     :
                     <Link to="/login">
-                    <button className="btn btn-regular rounded-pill">login</button>
+                    <button className="btn btn-regular rounded-pill">log in</button>
                     </Link>
                 }
                 <span className="me-3 fw-bold fs-5">or</span>

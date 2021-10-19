@@ -11,9 +11,9 @@ const Services = (props) => {
           <Image src={img} thumbnail></Image>
           <h5>{name}</h5>
           <p className="text-start">{description.slice(0, 100)}...</p>
-          <div className="text-center">
+          <div className="text-center my-4">
             <Link to={`/service/${id}`}>
-            <button className="btn">View Details</button>
+            <button className="btn details-btn ">View Details <i class="fas fa-arrow-right"></i></button>
             </Link>
           </div>
         </div>

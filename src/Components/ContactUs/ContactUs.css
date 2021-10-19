@@ -1,0 +1,12 @@
+.bg{
+    background-color: rgb(2, 2, 61);
+}
+.hr{
+    border-top: 3px solid white;
+    width: 70px;
+}
+.call-icon{
+    border-right: 2px solid white;
+    height: 70px;
+    padding-top: 10px;
+}

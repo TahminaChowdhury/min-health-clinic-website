@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Col, Container, Row, Image } from 'react-bootstrap';
 import { useParams } from 'react-router';
 
 
@@ -15,13 +16,19 @@ const ServiceDetails = () => {
             setService(singleService)
         })
     }, [])
-
-    
-    
-    
     return (
         <div>
-           <h1>{service.name}</h1>
+           <Container className="mt-5 pt-5">
+               <div className="d-flex">
+                    <div className="pe-5">
+                       <h1>{service.name}</h1>
+                       <p className="text-start">{service.description}</p>
+                    </div>
+                    <div>
+                    <img src={service.img} alt="" />
+                    </div>
+               </div>
+           </Container>
         </div>
     );
 };

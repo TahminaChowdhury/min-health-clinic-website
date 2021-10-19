@@ -1,3 +1,6 @@
 .card {
     border: 1px solid gray;
 }
+.details-btn{
+    background-color: rgb(4, 176, 245);
+}

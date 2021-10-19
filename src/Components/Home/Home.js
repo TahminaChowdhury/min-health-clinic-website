@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Banner from '../Banner/Banner';
+import ContactUs from '../ContactUs/ContactUs';
 import Services from '../Services/Services';
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
                         }
                 </Row>
             </Container>
+            <ContactUs></ContactUs>
         </div>
     );
 };
