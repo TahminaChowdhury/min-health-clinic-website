@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://mind-health-clinic.firebaseapp.com/).
 
-## Available Scripts
+## About website
 
 * This website is about mental health related website.
 
