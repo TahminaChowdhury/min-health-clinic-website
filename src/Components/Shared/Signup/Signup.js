@@ -16,16 +16,17 @@ const Signup = () => {
                 <form  onSubmit={handleSignup} className="mt-3">
                 <label htmlFor="">E-mail</label>
                     <br />
-                    <input onBlur={handleEmail} type="email" name="email" id="" required className="w-75 py-2 mb-3"/>
+                    <input onBlur={handleEmail} type="email" name="email" id="" required className="w-100 py-2 mb-3"/>
                     <br />
                     <label htmlFor="">Password</label>
                     <br />
-                    <input onBlur={handlePassword} type="password" name="password" id=""
-                    required className="w-75  py-2"/>
+                    <input onBlur={handlePassword} type="password" name="password" id="" placeholder="Password should be at least 6 characters..."
+                    required className="w-100  py-2"/>
                     <br />
                     <h5 className="text-danger my-3">{error}</h5>
-                    <button type="submit" className="btn btn-primary rounded-pill w-75 mt-5">Log in</button>
+                    <button type="submit" className="btn btn-primary rounded-pill w-75 mt-3 ms-5">Log in</button>
                 </form>
+                
             </div>
         </div>
     );

@@ -5,7 +5,7 @@ import img from '../../../images/mobile-login-concept-illustration_114360-83.jpg
 import { Link } from 'react-router-dom';
 
 const Login = () => {
-    const {error,signinWithGoogle, handleEmail, handlePassword, handleLogin} =useAuth();
+    const {error,signinWithGoogle, handleEmail, handlePassword, handleLogin, signInWithFacebook} =useAuth();
 
     return (
         <div className="d-flex justify-content-center">
@@ -27,13 +27,24 @@ const Login = () => {
                     <br />
                     <p>Forgot password ?</p>
                     <h5 className="text-danger my-3">{error}</h5>
-                    <button className="btn btn-primary rounded-pill w-75 mt-5">Log in</button>
+                    <button className="btn btn-primary rounded-pill w-75 mb-4">Log in</button>
                 </form>
-                <span >or login using</span>
-                <button onClick={signinWithGoogle} className="btn  btn-outline-primary rounded-pill px-5 mt-3">Log in with Google</button>
+                <span className="ms-5 ps-5">or login using</span>
+                {/* sign in with social media */}
+                <div className="d-flex">
+                    {/* google sign in */}
+                    <div className="google-signin">
+                        <button onClick={signinWithGoogle} className="btn btn-primary px-3 mt-3"><span className="fs-4"><i class="fab fa-google " ></i></span></button>
+                    </div>
+                    <div>
+                        {/* facebook sign in */}
+                    <div className="ms-3">
+                        <button onClick={signInWithFacebook} className="btn  btn-primary px-3 mt-3"><span className="fs-4"><i class="fab fa-facebook-f"></i></span></button></div>
+                    </div>
+                </div>
 
                 <div className="mt-5 ">
-                    <span>Don't have an acoount ?</span><Link  to="/signup" className="">Sign-up here</Link> 
+                    <span>Don't have an acoount ?</span><Link  to="/signup" className="text-primary">Sign-up here</Link> 
                 </div>
             </div>
                     
