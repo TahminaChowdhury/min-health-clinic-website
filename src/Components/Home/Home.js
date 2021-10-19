@@ -33,7 +33,7 @@ const Home = () => {
                 
             </Container>
            
-            <ContactUs></ContactUs>
+            
         </div>
     );
 };
