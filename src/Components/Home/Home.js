@@ -3,6 +3,7 @@ import './Home.css'
 import { Container, Row } from 'react-bootstrap';
 import Banner from '../Banner/Banner';
 import Services from '../Services/Services';
+import ContactUs from '../ContactUs/ContactUs'
 import img4 from '../../images/mental-health-1.jpg'
 import img5 from '../../images/hand-drawn-illustrations-people-with-mental-health-problems_23-2149048909.jpg'
 
@@ -49,7 +50,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            
+            <ContactUs></ContactUs>
         </div>
     );
 };

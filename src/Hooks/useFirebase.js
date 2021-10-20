@@ -14,7 +14,7 @@ const useFirebase = () => {
     const [email, setEmail] =useState("");
     const [password, setPassword] =useState("");
     
-
+    
     
     // handle email and password
     const handleEmail = (event) => {
@@ -50,6 +50,7 @@ const useFirebase = () => {
         .then(result => {
             console.log(result.user)
             verifyEmail();
+            
             setError("");
         })
         .catch(error => {
