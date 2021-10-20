@@ -5,10 +5,11 @@ import { Col, Row } from 'react-bootstrap';
 
 const Footer = () => {
     return (
-       <footer className="bg-dark mt-5 p-5 text-white">
+       <footer className="bg-dark pt-5 text-white">
+           <div className="container">
                <div className="row">
                     <div className="col-sm-6 col-md-4 col-lg-4">
-                    <div className="text-start">
+                    <div className=" text-start">
                         <h4><span className="fs-1 text-primary"> Mind </span>Health Clinic</h4>
                         <p className="text-white">You don’t have to <br /> control your thoughts. <br /> You just have to stop letting them control you. </p>
                     </div>
@@ -34,7 +35,7 @@ const Footer = () => {
                </div>
                <div className="row">
                     <div className="col">
-                        <div className="text-center pt-5">
+                        <div className="text-center py-5">
                         <span><i class="fab fa-facebook social-icon"></i></span>
                             <span><i class="fab fa-instagram social-icon"></i></span>
                             <span><i class="fab fa-twitter social-icon"></i></span>
@@ -43,6 +44,7 @@ const Footer = () => {
                             <small className="text-white">© Mind Health Clinic 2021. All Rights Reserved</small>
                         </div>
                     </div>
+               </div>
                </div>
        </footer>
     );

@@ -9,7 +9,7 @@ const ContactUs = () => {
     return (
         <div>
             <Home></Home>
-        <div className="bg my-5 py-5">
+        <div className="bg mt-5 pt-5">
             <div className="d-flex justify-content-between text-white">
                 <div className="p-5">
                     <h1>Contact Info</h1>
