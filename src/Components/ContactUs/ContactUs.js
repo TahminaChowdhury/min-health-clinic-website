@@ -1,14 +1,18 @@
 import React from 'react';
 import './ContactUs.css'
-import img from '../../images/picture-frustrated-young-caucasian-man-wearing-sweater-eyeglasses-sitting-comfortable-couch-sharing-his-personal-problems-with-middle-aged-female-counselor-during-therapy-session_344912-1930.jpg'
-import Banner from '../Banner/Banner';
-import Home from '../Home/Home'
+import img from '../../images/successful-medical-team_329181-9252.jpg'
 
 
 const ContactUs = () => {
     return (
         <div>
-            <Home></Home>
+            <div className="row" container>
+                <div className="col-12">
+                    <div className="bg-img text-center pt-5">
+
+                    </div>
+                </div>
+            </div>
             <div className="row bg mt-5 pt-5 text-white">
                 <div className="col-sm-12 col-md-6 col-md-6">
                     <div className="p-5">

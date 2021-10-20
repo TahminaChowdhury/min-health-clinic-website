@@ -1,3 +1,9 @@
+.bg-img{
+    background-image: url("../../images/blurred-abstract-background-interior-view-looking-out-toward-empty-office-lobby-entrance-doors-glass-curtain-wall-with-frame_1339-6364.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
 .bg{
     background-color: rgb(2, 2, 61);
 }
