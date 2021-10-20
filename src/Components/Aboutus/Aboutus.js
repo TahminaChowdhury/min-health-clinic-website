@@ -1,11 +1,8 @@
 import React from 'react';
 import './About.css'
-import Banner from '../Banner/Banner';
 import img1 from '../../images/young-female-psychologist-is-writing-down-her-thoughts-about-depressed-patient_23-2148036646.jpg'
 import img3 from '../../images/tiny-people-beautiful-flower-garden-inside-female-head-isolated-flat-illustration_74855-11098.jpg'
 import img2 from '../../images/doctor-2.jpg'
-import img4 from '../../images/mental-health-1.jpg'
-import img5 from '../../images/hand-drawn-illustrations-people-with-mental-health-problems_23-2149048909.jpg'
 import { Link } from 'react-router-dom';
 
 const Aboutus = () => {
@@ -61,23 +58,6 @@ const Aboutus = () => {
                 </div>
                 <p>Dr. Glen Xiong attended college at UC Berkeley, medical school at UC Davis, and completed his residency at Duke University. He has more than 15 years of clinical experience with expertise in psychopharmacology, depression, anxiety, neuropsychiatry, and memory care. Dr. Xiong takes a collaborative approach to patient care, striving to improve the lives of patients through compassionate clinical care while promoting choice and autonomy. He grew up in San Francisco and continues to live in Northern California.</p>
                 </div>
-                </div>
-            </div>
-            <div className="row my-5">
-                <div className="col-sm-6 col-md-6 col-lg-6">
-                    <div>
-                        <img src={img4} alt="" className="img-fluid"/>
-                    </div>
-                </div>
-                <div className="col-sm-6 col-md-6 col-lg-6">
-                <div>
-                        <h3 className="ps-5 ms-5 fw-bold">Services From our best <br /> psychiatrist</h3>
-                        <br />
-                        <h5 className="ps-5 ms-5">Top level physiotherapy professional, evidenced based treatment. We diagnose the cause and provide you with the best possible treatment.</h5>
-                        <div className="illustration px-5 mx-5">
-                        <img src={img5} alt="" className="img-fluid"/>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

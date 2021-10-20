@@ -28,6 +28,10 @@ const useFirebase = () => {
     // handle sign up and  log in
     const handleSignup = event => {
         event.preventDefault();
+        if (password.length < 6) {
+            setError('Password must have at least 6 characters');
+            return;
+          }
         createNewUserWithEmailAndPassword(email, password);
         
     };

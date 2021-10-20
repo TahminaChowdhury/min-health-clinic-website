@@ -26,7 +26,7 @@ const Signup = () => {
                     <br />
                     <button className="btn text-primary" onClick={handleResetPassword}>Forgot Password?</button>
                     <h5 className="text-danger my-3">{error}</h5>
-                    <button type="submit" className="btn btn-primary rounded-pill w-75 mt-3 ms-5">Log in</button>
+                    <button type="submit" className="btn btn-primary rounded-pill w-75 mt-3 ms-5">Sign up</button>
                 </form>
                 
             </div>
