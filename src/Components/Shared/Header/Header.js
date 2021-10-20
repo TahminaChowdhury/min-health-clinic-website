@@ -6,7 +6,7 @@ import useAuth from '../../../Hooks/useAuth';
 const Header = () => {
     const {user, logOut} =useAuth();
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="dark" className="mx-3">
         {/* icon */}
         <i class="fas fa-brain icon"></i>
 
