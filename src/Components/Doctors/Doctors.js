@@ -18,7 +18,7 @@ const Doctors = () => {
             <Container className="my-5">
                 <h1 className="my-5 text-color fs-bolder">Our Specialized Doctors</h1>
                 <hr className="line" / >
-                <Row className="mt-5">
+                <Row className="mt-5 g-5">
                     {
                         doctors.map(doctor => <Doctor doctor={doctor}></Doctor>)
                     }
