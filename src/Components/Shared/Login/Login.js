@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useHistory, useLocation } from 'react';
 import './Login.css'
 import useAuth from '../../../Hooks/useAuth'
 import img from '../../../images/mobile-login-concept-illustration_114360-83.jpg'
@@ -7,10 +7,11 @@ import { Link } from 'react-router-dom';
 const Login = () => {
     const {user,error,signinWithGoogle, handleEmail, handlePassword, handleResetPassword,handleLogin, signInWithFacebook} =useAuth();
     
+    
+    
 
     return (
         <div className="d-flex justify-content-center">
-            {user.name}
                 <div>
                     <img src={img} alt=""/>
                 </div>
@@ -28,7 +29,9 @@ const Login = () => {
                     required className="w-75  py-2"/>
                     <br />
                     <button className="btn text-primary" onClick={handleResetPassword}>Forgot Password?</button>
+
                     <h5 className="text-danger my-3">{error}</h5>
+
                     <button className="btn btn-primary rounded-pill w-75 mb-4">Log in</button>
                 </form>
                 <span className="ms-5 ps-5">or login using</span>

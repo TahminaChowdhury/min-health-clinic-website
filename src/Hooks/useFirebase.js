@@ -29,10 +29,12 @@ const useFirebase = () => {
     const handleSignup = event => {
         event.preventDefault();
         createNewUserWithEmailAndPassword(email, password);
+        
     };
     const handleLogin = (event) => {
         event.preventDefault();
         loginWithEmailandPassword(email, password)
+        
     };
     
 
@@ -54,13 +56,13 @@ const useFirebase = () => {
     // handle log in with email password
     const loginWithEmailandPassword = (email, password) =>{
 
-        signInWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                setError("");
-            })
-            .catch((error) => {
-                setError(error.message);
-            });
+       signInWithEmailAndPassword(auth, email, password)
+       .then(result => {
+           setUser(result.user);
+           setError("");
+       }).catch(error => {
+           setError(error.message)
+       })
     };
 
 
@@ -84,7 +86,7 @@ const useFirebase = () => {
 
     // sign in with google
     const signinWithGoogle = () => {
-       return signInWithPopup(auth, googleProvider)
+        signInWithPopup(auth, googleProvider)
         .then(result => {
             setUser(result.user)
             setError("");

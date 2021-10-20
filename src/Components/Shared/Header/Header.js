@@ -7,24 +7,23 @@ const Header = () => {
     const {user, logOut} =useAuth();
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="dark">
-        <Container>
+        {/* icon */}
         <i class="fas fa-brain icon"></i>
-        <Navbar.Brand className="text-dark fw-bold">
-        MIND HEALTH <br /> CLINIC 
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+        <Navbar.Brand className="text-dark">MIND HEALTH <br /> CLINIC</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="toggler-color"/>
         <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-                <NavLink to="/home">HOME</NavLink>
+          <Nav className="ms-auto">
+          <NavLink to="/home">HOME</NavLink>
                 <NavLink to="/aboutus">ABOUT US </NavLink>
                 <NavLink to="/doctors">DOCTORS</NavLink>
                 <NavLink to="/contactus">CONTACT US</NavLink>
-            </Nav>
-            <Nav>
-            <Navbar.Text className="me-3 fs-5 fw-bold text-dark">
+          </Nav>
+          <Navbar.Text className="me-3 fs-5 fw-bold text-dark">
                     Signed in as: <span className="text-primary">{user?.displayName}</span> 
             </Navbar.Text>
-                {
+          <Nav>
+          {
                     user?.email ?
                     <button onClick={logOut} className="btn btn-regular rounded-pill">log out</button>
                     :
@@ -36,10 +35,9 @@ const Header = () => {
                 <Link to="/signup">
                     <button className="btn btn-regular rounded-pill">Sign-up</button>
                 </Link>
-    </Nav>
-  </Navbar.Collapse>
-  </Container>
-</Navbar>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
 };
 
