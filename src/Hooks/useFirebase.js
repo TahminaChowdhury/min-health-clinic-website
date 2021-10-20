@@ -33,11 +33,13 @@ const useFirebase = () => {
             return;
           }
         createNewUserWithEmailAndPassword(email, password);
+        event.target.reset();
         
     };
     const handleLogin = (event) => {
         event.preventDefault();
         loginWithEmailandPassword(email, password)
+        event.target.reset();
         
     };
     
@@ -50,7 +52,6 @@ const useFirebase = () => {
         .then(result => {
             console.log(result.user)
             verifyEmail();
-            
             setError("");
         })
         .catch(error => {
