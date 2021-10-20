@@ -35,7 +35,7 @@ const Aboutus = () => {
                 </div>
             </div>
 
-            <div className="row my-5 py-5 fs-4">
+            <div className="row my-5 py-5 fs-5">
                 <div className="col-12">
                 <div>
                 <h2>Importance of Meantal health</h2>
