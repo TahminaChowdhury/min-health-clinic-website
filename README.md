@@ -4,14 +4,16 @@ This project was bootstrapped with [Create React App](https://mind-health-clinic
 
 ## About website
 
-* This website is about mental health related website.
+* Anyone can register here as a user by using email, password, google, and Facebook authentication.
 
-* Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make healthy choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.
+* User can see all doctor’s lists and their specialized services.
+
+* User can view service detail by login or signup.
 
 * 100% Private, Professional, Affordable Counseling Available Anytime, Anywhere. Make A Positive Change This Year. You Deserve to Be Happy. Don't Wait, Start Today!
 
 * You can also get online counselling from our specialized doctors.
 
-* It'll improve your self-acceptance and self-esteem.
+
 
 

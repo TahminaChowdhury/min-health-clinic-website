@@ -20,7 +20,7 @@ const Header = () => {
                 <NavLink to="/contactus">CONTACT US</NavLink>
           </Nav>
           <Navbar.Text className="me-3 fs-5 fw-bold text-dark">
-                    Signed in as: <span className="text-primary">{user?.displayName}</span> 
+          Signed in as: <span className="text-primary">{user?.displayName}</span>
             </Navbar.Text>
           <Nav>
           {
